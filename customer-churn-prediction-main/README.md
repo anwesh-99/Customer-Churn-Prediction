@@ -256,17 +256,6 @@ The saved model was serialized with **scikit-learn 1.6.1**. The dependency file 
 - Add explainable AI techniques (e.g., SHAP) for better model interpretability.
   ---
 
-# 👩‍💻 Author
-
-**Veena P**
-
-Data Analyst | Python | SQL | Power BI | Machine Learning | Streamlit
-
-📧 Feel free to connect and explore my projects on GitHub.
-
-
-
----
 
 ## 📁 Repository Notes
 
