@@ -1,9 +1,5 @@
 # 🔄 Customer Churn Prediction
 
-[![Live Demo](https://img.shields.io/badge/🚀-Live_Demo-red?style=for-the-badge&logo=streamlit)](https://veenaa-churn-prediction.streamlit.app)
-
----
-
 An end-to-end **Data Analytics and Machine Learning** project that predicts customer churn using the **Telco Customer Churn Dataset**. This project demonstrates the complete analytics workflow—from SQL-based business analysis and exploratory data analysis (EDA) to Machine Learning, Power BI dashboard development, and deployment with Streamlit.
 
 ---
@@ -19,7 +15,7 @@ This project analyzes customer behavior, identifies churn patterns, and predicts
 # 🎯 Project Objectives
 
 - Analyze customer churn trends using SQL.
-- Perform Exploratory Data Analysis (EDA) using Python.
+- Perform Exploratory Data Analysis using Python.
 - Build and evaluate a Machine Learning classification model.
 - Develop an interactive Power BI dashboard.
 - Deploy a Streamlit web application for real-time customer churn prediction.
@@ -219,57 +215,26 @@ The application allows users to enter customer details and instantly receive chu
 
 # 🚀 Installation
 
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/veenaa-p/customer-churn-prediction.git
-```
-
-## 2. Navigate to the Project
-
-```bash
-cd customer-churn-prediction
-```
-
-## 3. Install Required Libraries
+## 1. Install Required Libraries
 
 ```bash
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## 4. Run the Streamlit Application
+## 2. Run the Streamlit Application
 
 ```bash
 streamlit run app/app.py
 ```
 
-The saved model was serialized with **scikit-learn 1.6.1**. The dependency file pins this version because scikit-learn model files are not guaranteed to be compatible across versions. Use Python 3.11 as specified in `.python-version`.
----
-
 # 🔮 Future Improvements
 
 - Improve model performance through hyperparameter tuning.
-- Compare additional algorithms such as XGBoost and LightGBM.
 - Deploy the application on Streamlit Community Cloud.
 - Integrate a live database for real-time predictions.
-- Add explainable AI techniques (e.g., SHAP) for better model interpretability.
   ---
-
-
-## 📁 Repository Notes
-
-- `app/churn_model.pkl` is the trained Random Forest model used by the Streamlit app.
-- `data/raw/` contains the source CSV included with this project. Check the dataset's original distribution terms and retain any required attribution before redistributing it.
-- `data/cleaned/` contains the processed dataset used in the analysis.
-- `notebooks/` contains the exploratory analysis and model-training workflow.
-- `powerbi/` contains the editable Power BI report (`.pbix`).
-- `screenshots/` contains preview images used in this README.
 
 ## ⚠️ Model and Data Disclaimer
 
 This project is for educational and portfolio demonstration purposes. Predictions are estimates from a model trained on the included Telco customer dataset; they should not be treated as certainty or used as the sole basis for business decisions. The saved model is a Python pickle/joblib artifact. Only load model files from sources you trust.
-
-## 🧪 Reproducibility
-
-The Streamlit app expects the 19 model features in the same order and encoding used during model training. It validates the saved model's feature names before accepting predictions. To retrain the model, follow `notebooks/model.ipynb` and keep the app's input encoding aligned with the training notebook.
